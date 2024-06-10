@@ -1,0 +1,127 @@
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background-color: black;
+}
+
+@media screen and (min-width: 992px) {
+  .login-form-container {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.login-website-mobile-image {
+  width: 250px;
+  height: 250px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 9px 2px black;
+}
+@media screen and (min-width: 992px) {
+  .login-website-mobile-image {
+    display: none;
+    border-radius: none;
+  }
+}
+.desktop-image {
+  width: 50vw;
+  height: 100vh;
+  box-shadow: 2px 2px 9px 2px, black;
+  border-bottom-right-radius: 20px;
+}
+@media screen and (max-width: 992px) {
+  .desktop-image {
+    display: none;
+  }
+}
+.form-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+@media screen and (max-width: 991px) {
+  .form-main-container {
+    width: 100vw;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid violet;
+  border-radius: 8px;
+  width: 350px;
+}
+@media screen and (min-width: 992px) {
+  .form-container {
+    width: 350px;
+    flex-shrink: 0;
+    box-shadow: 2px 2px 9px 2px violet;
+    padding: 64px 48px 64px 48px;
+    justify-self: center;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+.label-text {
+  color: white;
+}
+.input-label {
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  line-height: 16px;
+  color: violet;
+}
+
+.input-field {
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid violet;
+  background-color: transparent;
+  color: white;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+
+.login-button {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 20px;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #ffffff;
+  border-color: violet;
+  outline: none;
+  cursor: pointer;
+}
+
+.error-message {
+  align-self: flex-start;
+  font-size: 16px;
+  font-family: 'Roboto';
+  margin-top: 14px;
+
+  color: #ff0b37;
+  line-height: 16px;
+}
